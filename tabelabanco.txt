@@ -1,0 +1,28 @@
+CREATE DATABSE banco;
+
+CREATE TABLE brinquedos (
+  id INT(11) AUTO_INCREMENT PRIMARY KEY,
+  codigo INT(11),
+  produto VARCHAR(80),
+  descricao VARCHAR(250),
+  data DATE,
+  valor DECIMAL(10, 2),
+  imagem VARCHAR(50),
+  faixa_etaria INT,
+  modelo VARCHAR(50),
+  marca VARCHAR(40)
+);
+
+USE banco;
+INSERT INTO brinquedos (id, codigo, produto, descricao, data, valor, imagem, faixa_etaria, modelo, marca)
+VALUES 
+(1, 1, 'Boneca Articulada - Moana Bebê - 36 cm - Cotiplás', 'A Baby Moana é super fofinha e quer se aventurar com você. Possui articulação, possibilitando a movimentação de braços e pernas da boneca na hora da brincadeira.', '2023-06-19', 180.99, 'img1.png', '3+', 'Moana Bebê', 'Cotiplás'),
+(2, 2, 'Blocos para Montar Brincando de Engenheiro 200 peças Xalingo - 53065', 'Características: - Marca: Xalingo - Modelo: 53065 Especificações: - 200 Peças - Composição do Material: Madeira Reflorestada e tinta atóxica - Cor Principal: Diversos - Indicado para crianças + 3 Anos - Desenvolve a coordenação motora - Acompanha manual de instruções', '2023-06-19', 53.99, 'img2.png', '3+', 'Blocos de Engenheiro', 'Xalingo'),
+(3, 3, 'Boneca Baby Alive - Hora da Papinha - Loira - 20 cm - F2617 - Hasbro', 'A boneca articulada de 20 cm pode ficar sentada ou fazer poses como se estivesse engatinhando. A fralda de plástico da boneca pode ser aberta para limpar a caquinha. Vem com babador removível, 1 pote de comida sólida para boneca, molde de lancheira e garfo/colher. A boneca Baby Alive Hora da papinha é um excelente presente de aniversário, natal ou outras celebrações.', '2023-06-19', 129.99, 'img3.png', '3+', 'Baby Alive Hora da Papinha', 'Hasbro'),
+(4, 4, 'Hot Wheels Pacote 5 Carrinhos sortidos - Mattel', 'Com estes carrinhos da coleção Hot Wheels a diversão está garantida. São 5 modelos para que o seu pequeno competidor tenha mais de uma opção para brincar. Ele ainda pode escolher o veículo que mais gosta e convidar outros 4 amiguinhos para disputar uma emocionante corrida nas pistas imaginárias que, juntos, eles podem criar. Indicadas para crianças acima de 3 anos. Essas miniaturas de veículos vão completar a coleção da garotada!', '2023-06-19', 69.99, 'img4.png', '3+', 'Hot Wheels Sortidos', 'Mattel'),
+(5, 5, 'Jogo de Cartas - uno - Copag', 'O Jogo de Cartas uno da Copag é diversão para toda a família. É preciso ser esperto para vencer e atrapalhar os adversários. Livre-se depressa de suas cartas, combine cores e números. Use as cartas de ação para atrapalhar os oponentes. Vence quem conseguir ficar sem cartas primeiro.', '2023-06-19', 17.85, 'img5.png', '6+', 'Uno', 'Copag'),
+(6, 6, 'Caixa Registradora Creative Fun Mini Shopping Rosa Com Acessórios Multikids - BR1182', 'Características: - Marca: Multikids - Modelo: BR1182 Especificações: - Idade Recomendada: 4 + Anos - Material: Plástico - Alimentação: 2 Pilhas aa (Não Inclusas) - Cor Principal: Rosa - Scanner com luz e som', '2023-06-19', 68.21, 'img6.png', '4+', 'Caixa Registradora Mini Shopping', 'Multikids'),
+(7, 7, 'Mini Carro Eletrico Mercedes Amg G63 12v Branco Bw124br Importway', 'O Mini Carro Elétrico Importway Mercedes Amg G63 da Importway é diversão garantida sobre quatro rodas para as pequenas aventuras! As brincadeiras ficarão muito mais realistas, pois o mini carro possui faróis de led, som e um design incrível da Mercedes Benz.', '2023-06-19', 4000.00, 'img7.png', '3+', 'Mercedes Amg G63', 'Importway'),
+(8, 8, 'Mesa infantil educativa desmontável com 2 cadeiras - tritec 3827', 'Produto confeccionado em plástico resistente, com pés de perfeito encaixe, que dá ao produto firmeza e sustentação durante o uso. O tampo da mesa possui espaços para seu filho encaixar letrinhas e números estimulando o aprendizado de forma lúdica. As cadeirinhas também possuem rebaixo para o encaixe das letra e números. A mesa e as duas cadeiras, possuem pés e encosto coloridos, estimulando a percepção visual para a fixação das diferentes cores. Acompanham: 1 Alfabeto Maiúsculo (26 letras) e numerais de 0 à 9.delos da marca.', '2023-06-19', 159.99, 'img8.png', '2+', 'Mesa Infantil Desmontável', 'tritec'),
+(9, 9, 'Boneco Batman Filme Novo Original 15cm - Sunny 2921', 'Boneco Batman Filme Novo Original 15cm - Sunny 2921 Cada figura de ação apresenta 11 pontos de articulação, uma capa de tecido e um estilo de filme detalhado que dá vida às suas figuras favoritas do Batman! Os fãs da dc de todas as idades adoram as figuras de ação do Batman. Envolva a sua imaginação.', '2023-06-19', 49.99, 'img9.png', '4+', 'Batman Filme Novo', 'Sunny'),
+(10, 10, 'Conjunto Lego Classic Ao Redor do Mundo', 'O conjunto Lego Classic Ao Redor do Mundo traz 15 ideias de modelo baseadas em animais icônicos e objetos que existem ao redor do mundo. As crianças também recebem um mapa de parede colorido para mostrar o continente de origem de cada animal e planta. As construções que devem ser feitas são, uma águia, cacto, papagaio, filhote de crocodilo, orca, leão, palmeira, girafa, ônibus, canguru com filhote, urso castanho, casa asiática, pinguim com filhote, peixe, veleiro e avião. E com uma tão vasta variedade de peças Lego, e também muitas peças extra na caixa, a criatividade sem limites fica livre para fluir.', '2023-06-19', 471.06, 'img10.png', '6+', 'Classic Ao Redor do Mundo', 'Lego');
